@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Player from './components/player';
+import Playlist from './components/playlist';
+import Create from './components/create';
+import Slider from './components/slider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App />
+    <Player />
+    <Playlist />
+    <Create /> */}
+    <Slider />
   </React.StrictMode>
 );
 
