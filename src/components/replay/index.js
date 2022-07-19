@@ -29,7 +29,7 @@ const Index = () => {
 
     const data = await response.data;
     setPosts(data.playlist);
-    console.log(posts)
+    console.log(data.playlist)
   }
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Index = () => {
 
 
   const cardClickHandlerReturn = async (details) => {
-    setVideoLink({ title: details.title, link: details.sources[3].file })
+    setVideoLink({ title: details.title, link: details.sources[0].file })
     showModal();
   }
 
