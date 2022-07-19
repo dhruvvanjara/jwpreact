@@ -1,0 +1,17 @@
+.slider__item img {
+    transition: .3s all ease-in-out;
+}
+
+.slider__item:hover img {
+    transform: scale(1.02);
+    z-index: 9999;
+}
+
+.slider__root {
+    margin-top: 4rem;   
+}
+
+ .slider__root .swiper-pagination {
+    position: initial;
+    margin-top: 1.5rem;
+ }
