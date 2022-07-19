@@ -31,11 +31,11 @@ export default function Example() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Home
-            </a>
-            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-900">
-              Replay
+            </a> */}
+            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-900  ">
+              Video Library
             </a>
           </Popover.Group>
         </div>
@@ -70,20 +70,20 @@ export default function Example() {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                    <a
-                      href="#"
-                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    >
-                      <HomeIcon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
-                      <span className="ml-3 text-base font-medium text-gray-900">Home</span>
-                    </a>
-                    <a
-                      href="#"
-                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    >
-                      <PlayIcon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
-                      <span className="ml-3 text-base font-medium text-gray-900">Replay</span>
-                    </a>
+                  <a
+                    href="#"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  >
+                    <HomeIcon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
+                    <span className="ml-3 text-base font-medium text-gray-900">Home</span>
+                  </a>
+                  <a
+                    href="#"
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
+                  >
+                    <PlayIcon className="flex-shrink-0 h-6 w-6 text-teal-400" aria-hidden="true" />
+                    <span className="ml-3 text-base font-medium text-gray-900">Replay</span>
+                  </a>
                 </nav>
               </div>
             </div>
