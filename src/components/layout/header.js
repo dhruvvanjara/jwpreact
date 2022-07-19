@@ -13,12 +13,12 @@ export default function Example() {
   return (
     <Popover className="relative bg-white border-b-2 border-[#7a05b8]">
       <div className="max-w-screen-lg mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-20 w-auto sm:h-20"
+                className="h-32 w-auto sm:h-25"
                 src={LOGO}
                 alt="logo_tt"
               />
@@ -34,7 +34,7 @@ export default function Example() {
             {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Home
             </a> */}
-            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-900  ">
+            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-900 text-2xl ">
               Video Library
             </a>
           </Popover.Group>

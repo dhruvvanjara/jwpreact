@@ -81,6 +81,7 @@ const Index = () => {
             playerId='5XxrbcdD'
             playerScript='https://cdn.jwplayer.com/libraries/5XxrbcdD.js'
             file={videoLink.link}
+            autostart="viewable"
           />
 
         </Modal>
