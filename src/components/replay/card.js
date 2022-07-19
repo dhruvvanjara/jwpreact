@@ -3,13 +3,13 @@ import React from 'react';
 
 const { Meta } = Card;
 
-const card: React.FC = () => (
+const card: React.FC = ({ videoDetails }) => (
   <Card
     hoverable
-    style={{ width: 240 }}
-    cover={<img alt="example" src="https://cdn.jwplayer.com/v2/media/e2KXU5bZ/poster.jpg?" />}
+    style={{ width: 300 }}
+    cover={<img alt="example" src={videoDetails.image} />}
   >
-    <Meta title="Video Title" description="Sample description." />
+    <Meta title={videoDetails.title} />
   </Card>
 );
 
