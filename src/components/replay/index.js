@@ -47,13 +47,13 @@ const Index = () => {
 
     <div className='max-w-full sm:max-w-6xl mx-auto px-5 my-20'>
 
-      <div className='grid grid-cols-1 sm:grid-cols-3 gap-10' >
+      <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 pb-5' >
         {
           posts.map((element, index) => {
 
             return (
 
-              <div key={index} onClick={() => cardClickHandlerReturn(element)}>
+              <div className="hover:scale-105" key={index} onClick={() => cardClickHandlerReturn(element)}>
 
 
                 {/* {element.sources[3].file} */}
