@@ -11,7 +11,7 @@ import LOGO from '../../images/logo1.png'
 
 export default function Example() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-white border-b-2 border-[#7a05b8]">
       <div className="max-w-screen-lg mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">

@@ -6,7 +6,7 @@ const { Meta } = Card;
 const card: React.FC = ({ videoDetails }) => (
   <Card
     hoverable
-    style={{ width: 300 }}
+    style={{ width: 350 }}
     cover={<img alt="example" src={videoDetails.image} />}
   >
     <Meta title={videoDetails.title} />
