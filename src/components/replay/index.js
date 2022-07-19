@@ -1,6 +1,8 @@
 import { Modal } from 'antd'
 import React from 'react'
 import Card from './card'
+import ReactDOM from 'react-dom';
+import ReactJWPlayer from 'react-jw-player';
 
 const Index = () => {
   const [visible, setVisible] = React.useState(false);
@@ -12,7 +14,11 @@ const Index = () => {
   const hideModal = () => {
     setVisible(false);
   };
-
+  
+ 
+    
+ 
+ 
 
   return (
     <div className='max-w-full sm:max-w-6xl mx-auto px-5 my-20'>
@@ -35,9 +41,13 @@ const Index = () => {
         width={900}
         footer={null}
       >
-        <p>Bla bla ...</p>
-        <p>Bla bla ...</p>
-        <p>Bla bla ...</p>
+         
+          <ReactJWPlayer
+                playerId='5XxrbcdD'
+                playerScript='https://cdn.jwplayer.com/libraries/5XxrbcdD.js'
+                playlist='https://cdn.jwplayer.com/v2/playlists/8VAOiJxB?format=mrss'
+            />
+     
       </Modal>
 
     </div>
