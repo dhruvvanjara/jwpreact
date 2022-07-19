@@ -7,7 +7,7 @@ import {
   XIcon,
   HomeIcon,
 } from '@heroicons/react/outline'
-import LOGO from '../../images/Logo.png'
+import LOGO from '../../images/logo1.png'
 
 export default function Example() {
   return (
@@ -18,7 +18,7 @@ export default function Example() {
             <a href="#">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-8 w-auto sm:h-10"
+                className="h-20 w-auto sm:h-20"
                 src={LOGO}
                 alt="logo_tt"
               />
