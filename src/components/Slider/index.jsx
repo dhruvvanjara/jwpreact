@@ -20,10 +20,14 @@ const Slider = () => {
   }
 
   const hideModal = () => {
+    debugger;
+    setVideoLink({ title: "", link: "" })
+
     setVisible(false);
   };
   const [videoLink, setVideoLink] = useState({ title: "", link: "" })
   const cardClickHandlerReturn = async (details) => {
+
     setVideoLink({ title: details.title, link: details.sources[0].file })
     showModal();
   }
