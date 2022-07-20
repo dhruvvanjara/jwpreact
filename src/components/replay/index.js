@@ -46,8 +46,9 @@ const Index = () => {
   return (
 
     <div className='max-w-full sm:max-w-6xl mx-auto px-5 my-20'>
-
+      <h3 className="text-base font-medium text-gray-900 hover:text-gray-900 text-2xl titltPadding ">Most Recent Videos</h3>
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-10 pb-5' >
+
         {
           posts.map((element, index) => {
 

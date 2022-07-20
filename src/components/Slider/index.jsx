@@ -47,7 +47,7 @@ const Slider = () => {
 
   return (
     <div className='slider__root'>
-
+      <h3 className="text-base font-medium text-gray-900 hover:text-gray-900 text-2xl titltPadding ">Trending Videos</h3>
       <Swiper
         spaceBetween={0}
         loop={true}
@@ -69,6 +69,7 @@ const Slider = () => {
 
 
       >
+
         {(posts || []).map((item, index) => (
 
           <SwiperSlide>
@@ -100,7 +101,7 @@ const Slider = () => {
 
       </Modal>
 
-    </div>
+    </div >
   )
 }
 
