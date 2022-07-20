@@ -2,13 +2,12 @@ import React from 'react';
 import axios from 'axios';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import { Card } from 'antd';
 import './index.css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import ReactJWPlayer from 'react-jw-player';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Modal } from 'antd'
 
 const Slider = () => {
@@ -58,7 +57,11 @@ const Slider = () => {
         }}
         navigation={true}
         slidesPerGroup={1}
-        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Navigation, Autoplay]}
 
 
       >
