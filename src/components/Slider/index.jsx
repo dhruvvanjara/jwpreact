@@ -12,13 +12,13 @@ const Slider = () => {
   const [posts, setPosts] = React.useState([]);
 
   const Playlist = async () => {
-      const response = await axios.get('https://cdn.jwplayer.com/v2/playlists/8VAOiJxB');
-      const data = await response.data;
-      setPosts(data.playlist);
+    const response = await axios.get('https://cdn.jwplayer.com/v2/playlists/pM6HpCzJ');
+    const data = await response.data;
+    setPosts(data.playlist);
   }
 
   React.useEffect(() => {
-      Playlist();
+    Playlist();
   }, []);
 
   console.log("posts", posts)
@@ -42,12 +42,14 @@ const Slider = () => {
       >
         {(posts || []).map((item, index) => (
           <SwiperSlide>
-              <div className='slider__item'>
-                <img style={{width: '100%'}} src={item.image} alt={item.title } />
-              </div>
+            <div className='slider__item'>
+              <img style={{ width: '100%' }} src={item.image} alt={item.title} />
+            </div>
+
           </SwiperSlide>
         ))}
       </Swiper>
+
     </div>
   )
 }
