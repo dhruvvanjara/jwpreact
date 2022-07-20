@@ -76,6 +76,7 @@ const Index = () => {
           okButtonProps={{ disabled: true }}
           width={900}
           footer={null}
+          destroyOnClose={true}
         >
 
           <ReactJWPlayer
