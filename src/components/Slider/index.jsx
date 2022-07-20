@@ -8,8 +8,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from 'swiper';
 
+
 const Slider = () => {
   const [posts, setPosts] = React.useState([]);
+
+
 
   const Playlist = async () => {
     const response = await axios.get('https://cdn.jwplayer.com/v2/playlists/pM6HpCzJ');
@@ -25,6 +28,7 @@ const Slider = () => {
 
   return (
     <div className='slider__root'>
+
       <Swiper
         spaceBetween={0}
         loop={true}
@@ -39,9 +43,13 @@ const Slider = () => {
         navigation={true}
         slidesPerGroup={1}
         modules={[Pagination, Navigation]}
+
+
       >
         {(posts || []).map((item, index) => (
+
           <SwiperSlide>
+            <p className='title'>{item.title}</p>
             <div className='slider__item'>
               <img style={{ width: '100%' }} src={item.image} alt={item.title} />
             </div>

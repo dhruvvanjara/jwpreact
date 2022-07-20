@@ -8,10 +8,22 @@
 }
 
 .slider__root {
-    margin-top: 4rem;   
+    margin-top: 4rem;
 }
 
- .slider__root .swiper-pagination {
+.slider__root .swiper-pagination {
     position: initial;
     margin-top: 1.5rem;
- }
+}
+
+.title {
+
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    font-family: Comic Sans MS;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 900;
+
+}
