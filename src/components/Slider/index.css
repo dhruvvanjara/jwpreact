@@ -27,3 +27,15 @@
     font-weight: 900;
 
 }
+
+.ant-modal-close-x {
+    line-height: 33px;
+}
+
+.ant-modal-header {
+    padding: 10px 24px;
+}
+
+.ant-modal-body {
+    padding: 10px;
+}
