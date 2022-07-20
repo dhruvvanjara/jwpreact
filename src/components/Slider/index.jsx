@@ -76,7 +76,7 @@ const Slider = () => {
           <SwiperSlide>
             <p className='title'>{item.title}</p>
             <PlayCircleOutlined style={{ fontSize: '55px', color: 'white' }} className='btn' />
-            {/* <button className='btn'>Play</button> */}
+
             <div className='slider__item' onClick={() => cardClickHandlerReturn(item)}>
               <img style={{ width: '100%' }} src={item.image} alt={item.title} />
             </div>
