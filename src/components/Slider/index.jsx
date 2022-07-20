@@ -7,11 +7,27 @@ import './index.css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from 'swiper';
-
+import ReactJWPlayer from 'react-jw-player';
+import { useState, useEffect } from 'react';
+import { Modal } from 'antd'
 
 const Slider = () => {
   const [posts, setPosts] = React.useState([]);
+  const [visible, setVisible] = React.useState(false);
 
+  const showModal = (e) => {
+    setVisible(true);
+    console.log(e.target.value)
+  }
+
+  const hideModal = () => {
+    setVisible(false);
+  };
+  const [videoLink, setVideoLink] = useState({ title: "", link: "" })
+  const cardClickHandlerReturn = async (details) => {
+    setVideoLink({ title: details.title, link: details.sources[0].file })
+    showModal();
+  }
 
 
   const Playlist = async () => {
@@ -50,13 +66,31 @@ const Slider = () => {
 
           <SwiperSlide>
             <p className='title'>{item.title}</p>
-            <div className='slider__item'>
+            <div className='slider__item' onClick={() => cardClickHandlerReturn(item)}>
               <img style={{ width: '100%' }} src={item.image} alt={item.title} />
             </div>
 
           </SwiperSlide>
         ))}
       </Swiper>
+      <Modal
+        title={videoLink.title}
+        visible={visible}
+        onCancel={hideModal}
+        cancelText="Close"
+        okButtonProps={{ disabled: true }}
+        width={900}
+        footer={null}
+      >
+
+        <ReactJWPlayer
+          playerId='5XxrbcdD'
+          playerScript='https://cdn.jwplayer.com/libraries/5XxrbcdD.js'
+          file={videoLink.link}
+          autostart="viewable"
+        />
+
+      </Modal>
 
     </div>
   )
