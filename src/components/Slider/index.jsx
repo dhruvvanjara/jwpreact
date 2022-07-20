@@ -21,7 +21,7 @@ const Slider = () => {
 
   const hideModal = () => {
     debugger;
-    setVideoLink({ title: "", link: "" })
+    // setVideoLink({ title: "", link: "" })
 
     setVisible(false);
   };
@@ -88,6 +88,7 @@ const Slider = () => {
         okButtonProps={{ disabled: true }}
         width={900}
         footer={null}
+        destroyOnClose={true}
       >
 
         <ReactJWPlayer
